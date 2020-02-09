@@ -1,0 +1,16 @@
+{
+  "include": ["./src/*"],
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["dom", "es2018"],
+    "jsx": "react",
+    "target": "es5",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "noEmit": true
+  }
+}

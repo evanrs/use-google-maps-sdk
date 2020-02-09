@@ -1,0 +1,72 @@
+{
+  "name": "use-google-maps-sdk",
+  "version": "0.0.0",
+  "description": "React hooks for Google Maps SDK.",
+  "main": "dist/use-google-maps-sdk.js",
+  "umd:main": "dist/use-google-maps-sdk.umd.js",
+  "module": "dist/use-google-maps-sdk.module.js",
+  "jsnext:main": "dist/use-google-maps-sdk.module.js",
+  "react-native": "dist/use-google-maps-sdk.module.js",
+  "typings": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "scripts": {
+    "clean": "npx rimraf dist",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepare": "npm run build",
+    "build": "microbundle",
+    "release": "npx standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanrs/use-google-maps-sdk.git"
+  },
+  "files": [
+    "dist/"
+  ],
+  "keywords": [
+    "google",
+    "maps",
+    "places",
+    "react-hooks",
+    "hooks",
+    "react"
+  ],
+  "author": "Evan Schneider <me@evanrs.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evanrs/use-google-maps-sdk/issues"
+  },
+  "homepage": "https://github.com/evanrs/use-google-maps-sdk#readme",
+  "peerDependencies": {
+    "react": ">=16.6.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@testing-library/react-hooks": "3.2.1",
+    "@types/googlemaps": "3.39.2",
+    "@types/jest": "25.1.2",
+    "@types/react-test-renderer": "16.9.2",
+    "@types/react": "16.9.19",
+    "@types/testing-library__react-hooks": "3.2.0",
+    "jest": "25.1.0",
+    "microbundle": "0.12.0-next.8",
+    "react-test-renderer": "16.12.0",
+    "react": "16.12.0",
+    "ts-jest": "25.2.0",
+    "typescript": "3.7.5"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx}",
+      "!**/node_modules/**"
+    ],
+    "testMatch": [
+      "**/*.spec.ts",
+      "**/*.test.ts"
+    ]
+  }
+}
