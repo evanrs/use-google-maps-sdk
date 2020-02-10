@@ -6,12 +6,12 @@ export function usePlacesAutocompleteService(
   deps?: DependencyList
 ) {
   const { maps, loaded, error } = useGoogleMapsSDK(key);
-  const sessionToken = usePlacesAutocompleteSessionToken(key, deps);
+  const { sessionToken } = usePlacesAutocompleteSessionToken(key, deps);
 
   return useMemo(() => {
     const autocomplete =
       maps == null ? undefined : new maps.places.AutocompleteService();
-    console.log({ autocomplete });
+
     return {
       maps,
       autocomplete:
