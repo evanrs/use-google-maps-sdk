@@ -1,6 +1,8 @@
+dependencies:
+  '@types/googlemaps': 3.39.2
+  use-latest-version: 1.1.3_react@16.12.0
 devDependencies:
   '@testing-library/react-hooks': 3.2.1_8d23436e3b9fa141bab91379710b4adb
-  '@types/googlemaps': 3.39.2
   '@types/jest': 25.1.2
   '@types/react': 16.9.19
   '@types/react-test-renderer': 16.9.2
@@ -1211,7 +1213,7 @@ packages:
     resolution:
       integrity: sha512-K1DPVvnBCPxzD+G51/cxVIoc2X8uUVl1zpJeE6iKcgHMj4+tbat5Xu4TjV7v2QSDbIeAfLi2hIk+u2+s0MlpUQ==
   /@types/googlemaps/3.39.2:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-eQNK23aCejjTF/HCzMObVPisnj6oBpWerhKpm849xW5JYocIHpnHnGYzWc9w076hIEpMt0bAxyPOaCoruYeGqg==
   /@types/istanbul-lib-coverage/2.0.1:
@@ -1479,7 +1481,7 @@ packages:
   /autoprefixer/9.7.4:
     dependencies:
       browserslist: 4.8.6
-      caniuse-lite: 1.0.30001025
+      caniuse-lite: 1.0.30001027
       chalk: 2.4.2
       normalize-range: 0.1.2
       num2fraction: 1.2.2
@@ -1660,8 +1662,8 @@ packages:
       integrity: sha512-exDi1BYWB/6raKHmDTCicQfTkqwN5fioMFV4j8BsfMU4R2DK/QfZfK7kOVkmWCNANf0snkBzqGqAJBao9gZMdQ==
   /browserslist/4.8.6:
     dependencies:
-      caniuse-lite: 1.0.30001025
-      electron-to-chromium: 1.3.345
+      caniuse-lite: 1.0.30001027
+      electron-to-chromium: 1.3.346
       node-releases: 1.1.48
     dev: true
     hasBin: true
@@ -1750,16 +1752,16 @@ packages:
   /caniuse-api/3.0.0:
     dependencies:
       browserslist: 4.8.6
-      caniuse-lite: 1.0.30001025
+      caniuse-lite: 1.0.30001027
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
     dev: true
     resolution:
       integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==
-  /caniuse-lite/1.0.30001025:
+  /caniuse-lite/1.0.30001027:
     dev: true
     resolution:
-      integrity: sha512-SKyFdHYfXUZf5V85+PJgLYyit27q4wgvZuf8QTOk1osbypcROihMBlx9GRar2/pIcKH2r4OehdlBr9x6PXetAQ==
+      integrity: sha512-7xvKeErvXZFtUItTHgNtLgS9RJpVnwBlWX8jSo/BO8VsF6deszemZSkJJJA1KOKrXuzZH4WALpAJdq5EyfgMLg==
   /capture-exit/2.0.0:
     dependencies:
       rsvp: 4.8.5
@@ -2306,10 +2308,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-OoOpBOVDUyh4dMVkt1SThoSamMk=
-  /electron-to-chromium/1.3.345:
+  /electron-to-chromium/1.3.346:
     dev: true
     resolution:
-      integrity: sha512-f8nx53+Z9Y+SPWGg3YdHrbYYfIJAtbUjpFfW4X1RwTZ94iUG7geg9tV8HqzAXX7XTNgyWgAFvce4yce8ZKxKmg==
+      integrity: sha512-Yy4jF5hJd57BWmGPt0KjaXc25AmWZeQK75kdr4zIzksWVtiT6DwaNtvTb9dt+LkQKwUpvBfCyyPsXXtbY/5GYw==
   /emoji-regex/8.0.0:
     dev: true
     resolution:
@@ -3659,7 +3661,6 @@ packages:
     resolution:
       integrity: sha512-FV6jEruneBhokkt9MQk0WUFoNTwnF76CLXtwNMfsc0um0TlB/LG2yxUd0KqaFjEJ9laQmVWQWS0sG/t2GsuI0w==
   /js-tokens/4.0.0:
-    dev: true
     resolution:
       integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
   /js-yaml/3.13.1:
@@ -3885,7 +3886,6 @@ packages:
   /loose-envify/1.4.0:
     dependencies:
       js-tokens: 4.0.0
-    dev: true
     hasBin: true
     resolution:
       integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -4212,7 +4212,6 @@ packages:
     resolution:
       integrity: sha512-fexhUFFPTGV8ybAtSIGbV6gOkSv8UtRbDBnAyLQw4QPKkgNlsH2ByPGtMUqdWkos6YCRmAqViwgZrJc/mRDzZQ==
   /object-assign/4.1.1:
-    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
@@ -4901,7 +4900,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.12.0
-    dev: true
     resolution:
       integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
   /psl/1.7.0:
@@ -4939,7 +4937,6 @@ packages:
     resolution:
       integrity: sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
   /react-is/16.12.0:
-    dev: true
     resolution:
       integrity: sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
   /react-test-renderer/16.12.0_react@16.12.0:
@@ -4959,7 +4956,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       prop-types: 15.7.2
-    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
@@ -5942,6 +5938,11 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
+  /ulid/2.3.0:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-keqHubrlpvT6G2wH0OEfSW4mquYRcbe/J8NMmveoQOjUqmo+hXtO+ORCpWhdbZ7k72UtY61BL7haGxW6enBnjw==
   /unicode-canonical-property-names-ecmascript/1.0.4:
     dev: true
     engines:
@@ -6017,6 +6018,15 @@ packages:
     dev: true
     resolution:
       integrity: sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+  /use-latest-version/1.1.3_react@16.12.0:
+    dependencies:
+      react: 16.12.0
+      ulid: 2.3.0
+    dev: false
+    peerDependencies:
+      react: '>=16.6.0'
+    resolution:
+      integrity: sha512-0lPOLwY72QVfX4W/KBD1VOU+yDZNwKE9QQaKDQ+It8/8oDLkM//yEAK/cSotp0TRWB0bF6J/pwfUJOms0a17/Q==
   /use/3.1.1:
     dev: true
     engines:
@@ -6234,3 +6244,4 @@ specifiers:
   react-test-renderer: 16.12.0
   ts-jest: 25.2.0
   typescript: 3.7.5
+  use-latest-version: 1.1.3
