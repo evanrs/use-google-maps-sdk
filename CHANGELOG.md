@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/evanrs/use-google-maps-sdk/compare/v0.0.2...v0.0.3) (2020-02-10)
+
+
+### Bug Fixes
+
+* destructure sessionToken ([9fe8805](https://github.com/evanrs/use-google-maps-sdk/commit/9fe8805b8623a17937a6f1693a0a3c1f9946e011))
+
 ### [0.0.2](https://github.com/evanrs/use-google-maps-sdk/compare/v0.0.1...v0.0.2) (2020-02-10)
 
 
