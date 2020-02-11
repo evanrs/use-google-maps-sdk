@@ -120,7 +120,7 @@ export function usePlacePredictions(
                 radius: radius ?? 16000
               })
           },
-          async (results, status) => {
+          (results, status) => {
             setPrediction({ input, results: results ?? [], status });
           }
         );
