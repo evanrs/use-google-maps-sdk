@@ -1,6 +1,6 @@
 {
   "name": "use-google-maps-sdk",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React hooks for Google Maps SDK.",
   "main": "dist/use-google-maps-sdk.js",
   "umd:main": "dist/use-google-maps-sdk.umd.js",
