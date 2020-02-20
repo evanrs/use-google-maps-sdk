@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/evanrs/use-google-maps-sdk/compare/v0.0.5...v0.0.6) (2020-02-20)
+
+
+### Bug Fixes
+
+* return maps as getter ([38a8462](https://github.com/evanrs/use-google-maps-sdk/commit/38a84620449d8675529cf996f792987718307348))
+
 ### [0.0.5](https://github.com/evanrs/use-google-maps-sdk/compare/v0.0.4...v0.0.5) (2020-02-11)
 
 ### [0.0.4](https://github.com/evanrs/use-google-maps-sdk/compare/v0.0.3...v0.0.4) (2020-02-10)
