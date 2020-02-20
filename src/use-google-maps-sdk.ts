@@ -7,7 +7,6 @@ export function useGoogleMapsSDK(
   key: string,
   libraries: Libraries[] = ["places"]
 ) {
-  const maps = window?.google?.maps;
   const [loaded, error] = useScript(
     `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(
       key
@@ -17,5 +16,14 @@ export function useGoogleMapsSDK(
   // TODO the change detection on "maps" is by side effect
   //      there appears to be a race condition when multiple
   //      useGoogleMapsSDK are used
-  return useMemo(() => ({ maps, loaded, error }), [maps, loaded, error]);
+  return useMemo(
+    () => ({
+      loaded,
+      error,
+      get maps() {
+        return window?.google?.maps;
+      }
+    }),
+    [loaded, error, window?.google?.maps]
+  );
 }
